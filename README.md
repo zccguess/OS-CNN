@@ -6,6 +6,11 @@
     numpy      1.19.5
     python     3.6
     scikit-learn  
+    libmr
+    pillow
 
 ## Network Structure
 ![img.png](https://raw.githubusercontent.com/zccguess/OS-CNN/master/readmeImages/test%20phase1.png?token=GHSAT0AAAAAABVV5Z3WFOD65C4UIR4T4Z4KYVL3WYA)
+### Note
+For the Python interface to work, this requires preinstall Cython on the machine.
+## Refer to the main.py for detail implementation
