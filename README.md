@@ -9,14 +9,16 @@
     libmr
     pillow
 
+##Data Preparation
+CRWU dataset [链接]
+JNU dataset[链接]
+SEU dataset[链接]
+PHM09 dataset[链接]
+
 ## Network Structure
 ![img.png](https://raw.githubusercontent.com/zccguess/OS-CNN/master/readmeImages/test%20phase1.png?token=GHSAT0AAAAAABVV5Z3WDAF5LYPQTC7UW3DGYVL42OA)
 ### Note
 For the Python interface to work, this requires preinstall Cython on the machine.
 ## Refer to the main.py for detail implementation
 
-##Data Preparation
-CRWU dataset [链接]
-JNU dataset[链接]
-SEU dataset[链接]
-PHM09 dataset[链接]
+
