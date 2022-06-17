@@ -8,4 +8,4 @@
     scikit-learn  
 
 ## Network Structure
-![img.png](readmeImages/test phase1.png)
+![img.png](https://raw.githubusercontent.com/zccguess/OS-CNN/master/readmeImages/test%20phase1.png?token=GHSAT0AAAAAABVV5Z3WFOD65C4UIR4T4Z4KYVL3WYA)
