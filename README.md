@@ -19,7 +19,8 @@ SEU dataset 链接：https://pan.baidu.com/s/1e5arWFx6PhcUMZwEGMj0wQ 提取码：5yc3
 PHM09 dataset 链接：https://pan.baidu.com/s/1QDGiK4Ve1y2HM6Tcees65w 提取码：vnqn
 
 ## Network Structure
-![img.png](https://raw.githubusercontent.com/zccguess/OS-CNN/master/readmeImages/test%20phase1.png?token=GHSAT0AAAAAABVV5Z3W2IVGTBBSKKKBPQMOYVNE7DA)
+![img.png](https://github.com/zccguess/OS-CNN/blob/master/readmeImages/test%20phase1.png)
+
 ### Note
 For the Python interface to work, this requires preinstall Cython on the machine.
 ## Refer to the main.py for detail implementation
