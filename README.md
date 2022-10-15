@@ -21,14 +21,14 @@ PHM09 dataset 链接：https://pan.baidu.com/s/1QDGiK4Ve1y2HM6Tcees65w 提取码
 ## Network Structure
 ![img.png](https://github.com/zccguess/OS-CNN/blob/master/readmeImages/test%20phase1.png)
 
-#How to run the existing code
-##Step 1: Train a CNN model for the dataset 
-##Step 2: Load the trained model,and load the training data you trained the trained model.
-##Step 3: The feature center and corresponding distance of each class center are calculated, 
-        ##and Weibull distribution is established according to the maximum distance.
-##Step 4: Evaluate the distribution of test samples based on the Weibull distribution of training data.
-##Step 5: Calculate the corresponding CDF probability based on different distributions of test samples.
-##Step 6: According to the CDF probability revise activation vectors, each sample is classified.
+## How to run the existing code
+### Step 1: Train a CNN model for the dataset 
+### Step 2: Load the trained model,and load the training data you trained the trained model.
+### Step 3: The feature center and corresponding distance of each class center are calculated, 
+        ### and Weibull distribution is established according to the maximum distance.
+### Step 4: Evaluate the distribution of test samples based on the Weibull distribution of training data.
+### Step 5: Calculate the corresponding CDF probability based on different distributions of test samples.
+### Step 6: According to the CDF probability revise activation vectors, each sample is classified.
 
 
 ### Note
