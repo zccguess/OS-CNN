@@ -10,16 +10,26 @@
     pillow
 
 ## Data Preparation
-CRWU dataset 链接：https://pan.baidu.com/s/10daD_ro2polDmar1oNiMAQ 提取码：gfpc
+CRWU dataset 閾炬帴锛歨ttps://pan.baidu.com/s/10daD_ro2polDmar1oNiMAQ 鎻愬彇鐮侊細gfpc
 
-JNU dataset 链接：https://pan.baidu.com/s/1hbJ_Mtyiu1cBTd2_XBY0og 提取码：s9ki 
+JNU dataset 閾炬帴锛歨ttps://pan.baidu.com/s/1hbJ_Mtyiu1cBTd2_XBY0og 鎻愬彇鐮侊細s9ki 
 
-SEU dataset 链接：https://pan.baidu.com/s/1e5arWFx6PhcUMZwEGMj0wQ 提取码：5yc3
+SEU dataset 閾炬帴锛歨ttps://pan.baidu.com/s/1e5arWFx6PhcUMZwEGMj0wQ 鎻愬彇鐮侊細5yc3
 
-PHM09 dataset 链接：https://pan.baidu.com/s/1QDGiK4Ve1y2HM6Tcees65w 提取码：vnqn
+PHM09 dataset 閾炬帴锛歨ttps://pan.baidu.com/s/1QDGiK4Ve1y2HM6Tcees65w 鎻愬彇鐮侊細vnqn
 
 ## Network Structure
 ![img.png](https://github.com/zccguess/OS-CNN/blob/master/readmeImages/test%20phase1.png)
+
+##How to run the existing code
+Step 1: Train a CNN model for the dataset 
+Step 2: Load the trained model,and load the training data you trained the trained model.
+Step 3: The feature center and corresponding distance of each class center are calculated, 
+        and Weibull distribution is established according to the maximum distance.
+Step 4: Evaluate the distribution of test samples based on the Weibull distribution of training data.
+Step 5: Calculate the corresponding CDF probability based on different distributions of test samples.
+Step 6: According to the CDF probability revise activation vectors, each sample is classified.
+
 
 ### Note
 For the Python interface to work, this requires preinstall Cython on the machine.
