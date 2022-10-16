@@ -62,34 +62,34 @@ def main():
     for q in softmax:
         softmax_label = np.argmax(q)
         softmax_list.append(softmax_label)
-###################################################混淆矩阵（将实际标签和预测标签保存）####################################################################
+###################################################Confusion matrix ( saving actual and predicted labels )####################################################################
     file = open('actual.txt', 'w')
     for i in range(len(actual_list)):
-        s = str(actual_list[i]).replace('[', '').replace(']', '') + ','  # 去除[],这两行按数据不同，可以选择
+        s = str(actual_list[i]).replace('[', '').replace(']', '') + ','  
         if i == len(actual_list) - 1:
             s = s.rstrip(',')
         file.write(s)
     file.close()
-    print("保存文件成功")
+    print("The file was saved successfully.")
 
     file = open('openmax.txt', 'w')
     for i in range(len(openmax_list)):
-        s = str(openmax_list[i]).replace('[', '').replace(']', '') + ','  # 去除[],这两行按数据不同，可以选择
+        s = str(openmax_list[i]).replace('[', '').replace(']', '') + ','
         if i == len(openmax_list) - 1:
             s = s.rstrip(',')
         file.write(s)
     file.close()
-    print("保存文件成功")
+    print("The file was saved successfully.")
     matrix.confusion('actual.txt', 'openmax.txt')
 ###################################################################################################################
     file = open('softmax.txt', 'w')
     for i in range(len(softmax_list)):
-        s = str(softmax_list[i]).replace('[', '').replace(']', '') + ','  # 去除[],这两行按数据不同，可以选择
+        s = str(softmax_list[i]).replace('[', '').replace(']', '') + ','  
         if i == len(softmax_list) - 1:
             s = s.rstrip(',')
         file.write(s)
     file.close()
-    print("保存文件成功")
+    print("The file was saved successfully.")
     matrix.confusion('actual.txt', 'softmax.txt')
 
     precision, recall, fscore, _ = precision_recall_fscore_support(actual_list, openmax_list)
