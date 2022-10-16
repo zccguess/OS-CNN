@@ -11,15 +11,15 @@ def confusion(true,pre):
     # sns.set()
     # f, ax = plt.subplots()
     y_true = np.loadtxt(true, delimiter=',')
-    y_pred = np.loadtxt(pre, delimiter=',')  # 最普通的loadtxt
+    y_pred = np.loadtxt(pre, delimiter=',')  #loadtxt
     y_true = y_true.tolist()
     y_pred = y_pred.tolist()
     print('true:',len(y_true))
     print('pred:',len(y_pred))
 
     C2 = confusion_matrix(y_true, y_pred)
-    print(C2)  # 打印出来看看
-    # sns.heatmap(C2, annot=True, ax=ax)  # 画热力图
+    print(C2)  
+    # sns.heatmap(C2, annot=True, ax=ax)  # drawing Heat Map
     plt.imshow(C2,  cmap=plt.cm.Oranges)
     indices = range(len(C2))
     #####################################################################
@@ -30,16 +30,16 @@ def confusion(true,pre):
     plt.xlabel('Predicted labels')
     plt.ylabel('True labels')
     plt.title('confusion matrix')
-    # 显示数据
-    for first_index in range(len(C2)):  # 第几行
-        for second_index in range(len(C2[first_index])):  # 第几列
+    # display data
+    for first_index in range(len(C2)):  # row
+        for second_index in range(len(C2[first_index])):  # columns
             plt.text(first_index, second_index,  C2[second_index][first_index])
-    # 在matlab里面可以对矩阵直接imagesc(confusion)
-    # 显示
+  
+  
     plt.show()
     plt.savefig('ConfusionMatrix1.jpg')
     plt.close()
-    ##########################################计算known和unknown准确性
+    ##########################################known and unknown 
     known = []
     for p in range(len(C2)):
         if p != len(C2) - 1:
