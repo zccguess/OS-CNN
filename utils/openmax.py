@@ -57,11 +57,11 @@ def compute_distances(mean_feature, feature, category_name):
 
 def get_pre_data():
 ################################################################################################################
-    xy_ = loadmat('dataset/CRWU/CRWU0/C0_0_.mat')  # crwu单工况
+    xy_ = loadmat('dataset/CRWU/CRWU0/C0_0_.mat')  # crwu
     xy = xy_['C0_0_']
     #######################################
     x_data = xy[:, :-1]
-    y_label = (xy[:, [-1]]).reshape(-1, )  # array数组(n,1)转换成(n,)
+    y_label = (xy[:, [-1]]).reshape(-1, )  # arra(n,1)transform(n,)
     pre_x = np.expand_dims(x_data, axis=-1)
     return pre_x,y_label
 
@@ -70,7 +70,7 @@ def get_pre_data():
 
 def get_train_test():
     ######C0
-    xy_ = loadmat('dataset/CRWU/CRWU0/C0_0.mat')  # crwu单工况
+    xy_ = loadmat('dataset/CRWU/CRWU0/C0_0.mat')  # crwu
     xy = xy_['C0_0']
     #######################################
     x_data = xy[:, :-1]
