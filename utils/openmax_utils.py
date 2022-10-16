@@ -55,7 +55,7 @@ def compute_distance( query_channel, channel, mean_vec,
     # print ('query_ch',query_channel)
     # print ('channel',channel)
 
-    query_channel = np.array(query_channel)###Particular FC8 channel of query image[600,5]###����ͼ�����ڶ��������
+    query_channel = np.array(query_channel)###Particular FC8 channel of query data[600,5]
     # mean_vec = np.reshape(mean_vec, (7, 1))  # CWRU
     # mean_vec = np.reshape(mean_vec, (3, 1))#J0-J1
     # mean_vec = np.reshape(mean_vec, (2, 1))  # J2-J4
