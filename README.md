@@ -1,4 +1,4 @@
-# This is a pytorch implementation of the paper Intelligent Bearing Fault Diagnosis Based on Open Set Convolutional Neural Network (OS-CNN)
+# This is a pytorch implementation of the paper Intelligent Bearing Fault Diagnosis Based on Open Set Convolutional Neural Network
 
 ## Environment
     tensorflow 1.15.0
