@@ -10,26 +10,26 @@ def Conv_BN_Relu(nb_filter, kernel_size, strides, input_layer):
     x = BatchNormalization()(x)
     x = Activation('relu')(x)
     return x
-# ResNet18网络对应的残差模块a和残差模块b
+# ResNet18 Network corresponding residual module a and residual module b
 def resiidual_a_or_b(input_x,nb_filter, flag):
     if flag == 'a':
-        # 主路
+        # main road
         x = Conv_BN_Relu(nb_filter, 3, 1, input_x)
         x = Conv_BN_Relu(nb_filter,3, 1, x)
-        # 输出
+        # output
         y = Add()([x, input_x])
         return y
     elif flag == 'b':
-        # 主路
+        # main road
         x = Conv_BN_Relu(nb_filter, 3, 2, input_x)
         x = Conv_BN_Relu(nb_filter, 3, 1, x)
-        # 支路下采样
+        # The branch down sampling
         input_x = Conv_BN_Relu(nb_filter, 3, 2, input_x)
-        # 输出
+        # output
         y = Add()([x, input_x])
         return y
 # model = Sequential()
-# 第一层
+# Last layer
 input_layer = Input(shape=(2049,1))
 print(input_layer)
 # x = ZeroPadding1D(1)(input_layer)
@@ -50,7 +50,7 @@ x = resiidual_a_or_b(x,  64, 'b')
 x = resiidual_a_or_b(x, 64, 'a')
 x = resiidual_a_or_b(x,  64, 'b')
 x = resiidual_a_or_b(x, 64, 'a')
-# 最后一层
+# Last layer
 x = GlobalAveragePooling1D()(x)
 # x = AveragePooling1D(pool_size=1)(x)
 x = Flatten()(x)
