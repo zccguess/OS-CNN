@@ -10,7 +10,7 @@ import numpy as np
 from utils.openmax import get_train_test, create_model,get_pre_data
 from utils.openmax import compute_activation, compute_openmax
 import matrix
-import train as ts
+import trained_model as ts
 import matplotlib.pyplot as plt
 # np.seterr(divide='ignore',invalid='ignore')
 plt.switch_backend('agg')
